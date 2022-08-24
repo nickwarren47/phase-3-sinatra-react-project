@@ -4,7 +4,8 @@ class CreateLightsabers < ActiveRecord::Migration[6.1]
       t.integer :user_id
       t.integer :lightsaber_color_id
       t.integer :lightsaber_style_id
-      t.integer :lightsaber_variation_id
+      t.integer :lightsaber_hilt_id
+      t.integer :lightsaber_blade_id
     end
   end
 end

@@ -46,4 +46,27 @@ puts "Done seeding lightsaber colors"
 puts "Seeding lightsaber styles..." 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+puts "Seeding lightsaber hilts...."
+lh1 = LightsaberHilt.create(image_url: , hilt: "Standard Lightsaber")
+
+
+
+
 puts "✅ Done seeding. May the force be with you."
