@@ -3,8 +3,6 @@ class CreateLightsabers < ActiveRecord::Migration[6.1]
     create_table :lightsabers do |t|
       t.integer :user_id
       t.integer :lightsaber_color_id
-      t.integer :lightsaber_style_id
-      t.integer :lightsaber_hilt_id
       t.integer :lightsaber_blade_id
     end
   end

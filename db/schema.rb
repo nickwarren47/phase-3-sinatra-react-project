@@ -14,35 +14,19 @@ ActiveRecord::Schema.define(version: 2022_08_24_001509) do
 
   create_table "lightsaber_blades", force: :cascade do |t|
     t.string "image_url"
-    t.string "blade"
-    t.string "blade_users"
+    t.string "blade_name"
   end
 
   create_table "lightsaber_colors", force: :cascade do |t|
+    t.string "color_name"
     t.string "image_url"
     t.string "symbolism"
-    t.string "color_users"
-    t.string "crystal_color"
     t.boolean "is_light"
-  end
-
-  create_table "lightsaber_hilts", force: :cascade do |t|
-    t.string "image_url"
-    t.string "hilt"
-    t.string "hilt_users"
-  end
-
-  create_table "lightsaber_styles", force: :cascade do |t|
-    t.string "image_url"
-    t.string "history"
-    t.integer "combat_form"
   end
 
   create_table "lightsabers", force: :cascade do |t|
     t.integer "user_id"
     t.integer "lightsaber_color_id"
-    t.integer "lightsaber_style_id"
-    t.integer "lightsaber_hilt_id"
     t.integer "lightsaber_blade_id"
   end
 
