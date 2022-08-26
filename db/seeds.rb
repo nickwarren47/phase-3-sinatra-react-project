@@ -55,7 +55,7 @@ split = LightsaberBlade.create(blade_name: "Split Saber", image_url: "https://us
 puts "Done seeding lightsaber blades" 
 
 puts "Seeding lightsabers ..."
-ls1 = Lightsaber.create(user_id: u1, lightsaber_color_id: purple.id, lightsaber_blade_id: single.id)
+ls1 = Lightsaber.create(user_id: u1.id, lightsaber_color_id: purple.id, lightsaber_blade_id: single.id)
 ls2 = Lightsaber.create(user_id: u2.id, lightsaber_color_id: green.id , lightsaber_blade_id: single.id)
 ls3 = Lightsaber.create(user_id: u3.id, lightsaber_color_id: blue.id , lightsaber_blade_id: single.id)
 ls4 = Lightsaber.create(user_id: u4.id , lightsaber_color_id: green.id, lightsaber_blade_id: single.id)
